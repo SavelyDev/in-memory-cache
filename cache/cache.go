@@ -11,6 +11,12 @@ type cache struct {
 	storage map[string]any
 }
 
+func New() *cache {
+	return &cache{
+		storage: make(map[string]any),
+	}
+}
+
 func (c *cache) Set(key string, value any, ttl time.Duration) {
 	c.locker.Lock()
 	defer c.locker.Unlock()

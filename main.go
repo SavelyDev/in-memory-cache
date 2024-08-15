@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"in-memory-cache/cache"
 	"time"
+
+	"github.com/SavelyDev/in-memory-cache/cache"
 )
 
 func main() {
